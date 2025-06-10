@@ -1,0 +1,100 @@
+{
+  "safety_buffer": 5.0,
+  "time_step": 0.5,
+  "scenarios": [
+    {
+      "scenario_name": "Conflict_Free_Scenario",
+      "description": "Primary drone flies without conflicts.",
+      "primary_drone": {
+        "drone_id": "Primary_Drone",
+        "mission_start_time": 0.0,
+        "mission_end_time": 100.0,
+        "waypoints": [
+          {"x": 0, "y": 0, "z": 10, "timestamp": 0.0},
+          {"x": 50, "y": 0, "z": 10, "timestamp": 20.0},
+          {"x": 100, "y": 50, "z": 10, "timestamp": 50.0},
+          {"x": 150, "y": 50, "z": 10, "timestamp": 70.0},
+          {"x": 200, "y": 0, "z": 10, "timestamp": 100.0}
+        ]
+      },
+      "simulated_drones": [
+        {
+          "drone_id": "Sim_Drone_1",
+          "waypoints": [
+            {"x": 0, "y": 100, "z": 15, "timestamp": 0.0},
+            {"x": 200, "y": 100, "z": 15, "timestamp": 100.0}
+          ]
+        },
+        {
+          "drone_id": "Sim_Drone_2",
+          "waypoints": [
+            {"x": 100, "y": -50, "z": 5, "timestamp": 0.0},
+            {"x": 100, "y": 150, "z": 5, "timestamp": 100.0}
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_name": "Multiple_Conflicts_Scenario",
+      "description": "Primary drone has one conflict with Sim_Drone_1.",
+      "primary_drone": {
+        "drone_id": "Primary_Drone",
+        "mission_start_time": 0.0,
+        "mission_end_time": 100.0,
+        "waypoints": [
+          {"x": 0, "y": 0, "z": 10, "timestamp": 0.0},
+          {"x": 100, "y": 100, "z": 10, "timestamp": 50.0},
+          {"x": 200, "y": 0, "z": 10, "timestamp": 100.0}
+        ]
+      },
+      "simulated_drones": [
+        {
+          "drone_id": "Sim_Drone_1_Conflicting",
+          "waypoints": [
+            {"x": 0, "y": 100, "z": 10, "timestamp": 0.0},
+            {"x": 100, "y": 0, "z": 10, "timestamp": 50.0},
+            {"x": 200, "y": 100, "z": 10, "timestamp": 100.0}
+          ]
+        },
+        {
+          "drone_id": "Sim_Drone_2",
+          "waypoints": [
+            {"x": -50, "y": 50, "z": 12, "timestamp": 0.0},
+            {"x": 250, "y": 50, "z": 12, "timestamp": 100.0}
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_name": "Single_Conflict_Scenario",
+      "description": "Primary drone has multiple conflicts.",
+      "primary_drone": {
+        "drone_id": "Primary_Drone",
+        "mission_start_time": 0.0,
+        "mission_end_time": 150.0,
+        "waypoints": [
+          {"x": 0, "y": 0, "z": 10, "timestamp": 0.0},
+          {"x": 150, "y": 0, "z": 10, "timestamp": 50.0},
+          {"x": 150, "y": 100, "z": 10, "timestamp": 100.0},
+          {"x": 0, "y": 100, "z": 10, "timestamp": 150.0}
+        ]
+      },
+      "simulated_drones": [
+        {
+          "drone_id": "Sim_Drone_A",
+          "waypoints": [
+            {"x": 75, "y": -20, "z": 10, "timestamp": 0.0},
+            {"x": 75, "y": 120, "z": 10, "timestamp": 150.0}
+          ]
+        },
+        {
+          "drone_id": "Sim_Drone_B",
+          "waypoints": [
+            {"x": -20, "y": 50, "z": 10, "timestamp": 0.0},
+            {"x": 170, "y": 50, "z": 10, "timestamp": 100.0}
+          ]
+        }
+      ]
+    }
+  ]
+}
