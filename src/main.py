@@ -46,16 +46,12 @@ def run_deconfliction_simulation(scenario_name: str,
                                    f"{scenario_name}_deconfliction_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt")
 
     # Collect content for the report file and terminal output
-    report_lines = []
-
-    report_lines.append(f"Deconfliction Report for Scenario: '{scenario_name}'")
-    report_lines.append(f"Generated at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    report_lines.append("-" * 60)
-    report_lines.append(f"Primary Drone ID: {primary_mission.drone_id}")
-    report_lines.append(f"Simulated Drones ({len(simulated_missions)}): {[d.drone_id for d in simulated_missions]}")
-    report_lines.append(f"Safety Buffer: {safety_buffer:.2f} meters")
-    report_lines.append(f"Time Step for Simulation: {time_step:.2f} seconds")
-    report_lines.append("-" * 60)
+    report_lines = [f"Deconfliction Report for Scenario: '{scenario_name}'",
+                    f"Generated at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}", "-" * 60,
+                    f"Primary Drone ID: {primary_mission.drone_id}",
+                    f"Simulated Drones ({len(simulated_missions)}): {[d.drone_id for d in simulated_missions]}",
+                    f"Safety Buffer: {safety_buffer:.2f} meters", f"Time Step for Simulation: {time_step:.2f} seconds",
+                    "-" * 60]
 
     # --- NEW/MODIFIED: Calculate global time points and distances once ---
     all_traj_points_combined = list(primary_mission.trajectory_points)
