@@ -1,0 +1,9 @@
+Deconfliction Report for Scenario: 'Conflict_Free_Scenario'
+Generated at: 2025-06-12 09:53:28
+------------------------------------------------------------
+Primary Drone ID: Primary_Drone
+Simulated Drones (2): ['Sim_Drone_1', 'Sim_Drone_2']
+Safety Buffer: 5.00 meters
+Time Step for Simulation: 0.50 seconds
+------------------------------------------------------------
+DECONFLICTION STATUS: CLEAR - No conflicts detected.

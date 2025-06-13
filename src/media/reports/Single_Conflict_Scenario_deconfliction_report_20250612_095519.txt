@@ -1,0 +1,111 @@
+Deconfliction Report for Scenario: 'Single_Conflict_Scenario'
+Generated at: 2025-06-12 09:55:19
+------------------------------------------------------------
+Primary Drone ID: Primary_Drone
+Simulated Drones (2): ['Sim_Drone_A', 'Sim_Drone_B']
+Safety Buffer: 5.00 meters
+Time Step for Simulation: 0.50 seconds
+------------------------------------------------------------
+DECONFLICTION STATUS: CONFLICT DETECTED - 10 conflict(s) detected!
+
+--- Detected Conflicts ---
+Conflict 1:
+  Time of Conflict: 23.50 seconds
+  Distance at Conflict: 4.90 meters (Safety Buffer: 5.00m)
+  Primary Drone (N/A)
+    Position: (X=70.50, Y=0.00, Z=10.00)
+    Timestamp: 23.50s
+  Conflicting Drone ID: Sim_Drone_A
+    Position: (X=75.00, Y=1.93, Z=10.00)
+    Timestamp: 23.50s
+------------------------------
+Conflict 2:
+  Time of Conflict: 24.00 seconds
+  Distance at Conflict: 3.84 meters (Safety Buffer: 5.00m)
+  Primary Drone (N/A)
+    Position: (X=72.00, Y=0.00, Z=10.00)
+    Timestamp: 24.00s
+  Conflicting Drone ID: Sim_Drone_A
+    Position: (X=75.00, Y=2.40, Z=10.00)
+    Timestamp: 24.00s
+------------------------------
+Conflict 3:
+  Time of Conflict: 24.50 seconds
+  Distance at Conflict: 3.24 meters (Safety Buffer: 5.00m)
+  Primary Drone (N/A)
+    Position: (X=73.50, Y=0.00, Z=10.00)
+    Timestamp: 24.50s
+  Conflicting Drone ID: Sim_Drone_A
+    Position: (X=75.00, Y=2.87, Z=10.00)
+    Timestamp: 24.50s
+------------------------------
+Conflict 4:
+  Time of Conflict: 25.00 seconds
+  Distance at Conflict: 3.33 meters (Safety Buffer: 5.00m)
+  Primary Drone (N/A)
+    Position: (X=75.00, Y=0.00, Z=10.00)
+    Timestamp: 25.00s
+  Conflicting Drone ID: Sim_Drone_A
+    Position: (X=75.00, Y=3.33, Z=10.00)
+    Timestamp: 25.00s
+------------------------------
+Conflict 5:
+  Time of Conflict: 25.50 seconds
+  Distance at Conflict: 4.09 meters (Safety Buffer: 5.00m)
+  Primary Drone (N/A)
+    Position: (X=76.50, Y=0.00, Z=10.00)
+    Timestamp: 25.50s
+  Conflicting Drone ID: Sim_Drone_A
+    Position: (X=75.00, Y=3.80, Z=10.00)
+    Timestamp: 25.50s
+------------------------------
+Conflict 6:
+  Time of Conflict: 124.50 seconds
+  Distance at Conflict: 4.09 meters (Safety Buffer: 5.00m)
+  Primary Drone (N/A)
+    Position: (X=76.50, Y=100.00, Z=10.00)
+    Timestamp: 124.50s
+  Conflicting Drone ID: Sim_Drone_A
+    Position: (X=75.00, Y=96.20, Z=10.00)
+    Timestamp: 124.50s
+------------------------------
+Conflict 7:
+  Time of Conflict: 125.00 seconds
+  Distance at Conflict: 3.33 meters (Safety Buffer: 5.00m)
+  Primary Drone (N/A)
+    Position: (X=75.00, Y=100.00, Z=10.00)
+    Timestamp: 125.00s
+  Conflicting Drone ID: Sim_Drone_A
+    Position: (X=75.00, Y=96.67, Z=10.00)
+    Timestamp: 125.00s
+------------------------------
+Conflict 8:
+  Time of Conflict: 125.50 seconds
+  Distance at Conflict: 3.24 meters (Safety Buffer: 5.00m)
+  Primary Drone (N/A)
+    Position: (X=73.50, Y=100.00, Z=10.00)
+    Timestamp: 125.50s
+  Conflicting Drone ID: Sim_Drone_A
+    Position: (X=75.00, Y=97.13, Z=10.00)
+    Timestamp: 125.50s
+------------------------------
+Conflict 9:
+  Time of Conflict: 126.00 seconds
+  Distance at Conflict: 3.84 meters (Safety Buffer: 5.00m)
+  Primary Drone (N/A)
+    Position: (X=72.00, Y=100.00, Z=10.00)
+    Timestamp: 126.00s
+  Conflicting Drone ID: Sim_Drone_A
+    Position: (X=75.00, Y=97.60, Z=10.00)
+    Timestamp: 126.00s
+------------------------------
+Conflict 10:
+  Time of Conflict: 126.50 seconds
+  Distance at Conflict: 4.90 meters (Safety Buffer: 5.00m)
+  Primary Drone (N/A)
+    Position: (X=70.50, Y=100.00, Z=10.00)
+    Timestamp: 126.50s
+  Conflicting Drone ID: Sim_Drone_A
+    Position: (X=75.00, Y=98.07, Z=10.00)
+    Timestamp: 126.50s
+------------------------------------------------------------
